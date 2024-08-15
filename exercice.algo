@@ -1,0 +1,59 @@
+ALGORITHM bigger_number
+VAR
+    x,y : FLOAT;
+BEGIN
+    Read(x)
+    Read(y)
+    IF (x>y) THEN
+        Write("the bigger number is:",x)
+    ELSE
+          Write("the bigger number is:",y)
+    END_IF
+END
+
+ALGORITHM circle_area
+VAR
+    R :FLOAT;
+    area:FLOAT
+ CONST
+
+ Pi:FLOAT:=3.14
+
+BEGIN
+    Read(r)
+    area:= r*r*Pi;
+    Write("the area is ",area) ;
+END
+
+ALGORITHM Sum_of_two_numbers
+VAR
+    x,y : INTEGER:
+    Sum:INTEGER:=0
+BEGIN
+    REPEAT
+        Read(x);
+        Read(y);
+        Sum:=x+y;
+    UNTIL (Sum>20)
+    Write("the total is:",Sum)
+END
+
+ALGORITHM largest_number
+VAR
+ x,y,z:INTEGER;
+BEGIN
+  Read(x);
+    Read(y);
+    Read(z);
+
+IF (x>y and x>z) THEN
+    Write("the largest is",x)
+END_IF
+IF (y>x and y>z) THEN
+     Write("the largest is",y)
+END_IF
+IF (z>x and z>y) THEN
+ Write("the largest is",z)
+END_IF
+    
+END
